@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandynic Software - ソフトウェア開発支援</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; color: #1a1a2e; border-bottom: 3px solid #667eea; padding-bottom: 0.5rem; }
+        .section { margin-bottom: 60px; }
+        .mission-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .mission-box h3 { color: #667eea; margin-bottom: 10px; }
+        .services { display: grid; gap: 20px; }
+        .service {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 4px solid #667eea;
+        }
+        .service h3 { color: #1a1a2e; margin-bottom: 10px; }
+        .service p { color: #666; }
+        .values { display: grid; gap: 15px; }
+        .value { display: flex; align-items: flex-start; gap: 15px; }
+        .value-icon { font-size: 1.5rem; }
+        .value h4 { color: #1a1a2e; margin-bottom: 5px; }
+        .value p { color: #666; font-size: 0.95rem; }
+        .price-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .price-table th, .price-table td { border: 1px solid #e0e0e0; padding: 12px 15px; text-align: left; }
+        .price-table th { background: #667eea; color: white; }
+        .price-table tr:nth-child(even) { background: #f8f9fa; }
+        .note { color: #666; font-size: 0.9rem; margin-top: 15px; }
+        .work-conditions { background: #f8f9fa; padding: 25px; border-radius: 10px; margin-top: 20px; }
+        .work-conditions h3 { color: #667eea; margin-bottom: 15px; }
+        .work-conditions ul { margin-left: 20px; }
+        .work-conditions li { margin-bottom: 8px; }
+        .contact {
+            background: #1a1a2e;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .contact h2 { color: white; border-bottom-color: #667eea; display: inline-block; }
+        .contact a { color: #667eea; text-decoration: none; font-size: 1.2rem; }
+        .contact a:hover { text-decoration: underline; }
+        .links { margin-top: 30px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .links a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        .links a:hover { color: white; }
+        .founder { margin-top: 20px; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Vandynic Software</h1>
+        <p>様々なビジネスを行っている事業者様のソフトウェア開発支援における、最高のパートナーです。</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>使命と背景</h2>
+            <p>現代のビジネスプロセスには、ほぼ必ずソフトウェア開発が関与しています。しかしながら、技術の進化や変化の速度は非常に速く、これに追随することは多くの事業者にとって難しい課題となっています。</p>
+            <br>
+            <p>Vandynic Softwareは、<strong>ビジネスチャンスの損失</strong>や<strong>技術的負債の蓄積</strong>といった課題を解決するために活動しています。</p>
+        </section>
+
+        <section class="section">
+            <h2>提供する主なサービス</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>新規施策のソフトウェア開発支援</h3>
+                    <p>新しいビジネスアイデアを迅速に形にするための開発プロセスを支援します。<br>例：プロトタイプ開発、スケーラブルなシステム設計、新技術の導入。</p>
+                </div>
+                <div class="service">
+                    <h3>技術的負債の解消支援</h3>
+                    <p>既存プロダクトを深く分析し、最適なリファクタリングや技術更新を提案・実行します。<br>例：古いコードの最適化、モダンフレームワークへの移行、インフラの再設計。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>ミッション・ビジョン・バリュー</h2>
+            <div class="mission-box">
+                <h3>ミッション</h3>
+                <p>ソフトウェア関連の障壁をなくし、事業者がビジネスチャンスを逃さない社会の実現</p>
+            </div>
+            <div class="mission-box">
+                <h3>ビジョン</h3>
+                <p>柔軟性と迅速性を持ちながら、事業者の成長を共に推進する最高のパートナーとなる</p>
+            </div>
+            <div class="mission-box">
+                <h3>バリュー</h3>
+                <div class="values">
+                    <div class="value">
+                        <span class="value-icon">💪</span>
+                        <div>
+                            <h4>圧倒的な技術力</h4>
+                            <p>高い技術知識と実行力で複雑な課題を解決します</p>
+                        </div>
+                    </div>
+                    <div class="value">
+                        <span class="value-icon">⚡</span>
+                        <div>
+                            <h4>最適かつコスパ重視の手段の追求</h4>
+                            <p>完璧を求めすぎず、現実的かつ最善の解決方法を柔軟に追求します</p>
+                        </div>
+                    </div>
+                    <div class="value">
+                        <span class="value-icon">🤝</span>
+                        <div>
+                            <h4>顧客目線の徹底</h4>
+                            <p>顧客の立場で課題を深く理解し、自社プロジェクトのように真剣に取り組みます</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>契約形態について</h2>
+            <p>本サービスは原則として<strong>準委任契約</strong>を採用しております。</p>
+
+            <h3 style="margin-top: 30px; margin-bottom: 15px; color: #1a1a2e;">価格表</h3>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>価格形態</th>
+                        <th>単価</th>
+                        <th>月間最小稼働時間</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>数か月に及ぶ継続稼働</td>
+                        <td>4,000円/時間〜</td>
+                        <td>32時間〜（例：週2日×4時間など）</td>
+                    </tr>
+                    <tr>
+                        <td>一時的な単発稼働</td>
+                        <td>案件内容に応じて要相談</td>
+                        <td>32時間〜（例：週2日×4時間など）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="note">※業務内容により、時間単価は増減いたします。<br>※準委任契約以外につきましては、別途ご相談ください。</p>
+
+            <div class="work-conditions">
+                <h3>稼働条件</h3>
+                <ul>
+                    <li><strong>平日</strong>
+                        <ul>
+                            <li>稼働可能時間：1日最大5時間（7時〜9時、20時〜23時）</li>
+                            <li>稼働可能日数：月最大20日</li>
+                        </ul>
+                    </li>
+                    <li><strong>土日祝</strong>
+                        <ul>
+                            <li>稼働可能時間：1日最大8時間</li>
+                            <li>稼働可能日数：月最大5日</li>
+                        </ul>
+                    </li>
+                    <li><strong>月間稼働時間</strong>：32時間〜132時間</li>
+                </ul>
+                <p class="note">※稼働可能日は事前（目安として1週間前まで）に両者合意の上で決定します。</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>事業主について</h2>
+            <p><strong>事業主：</strong>斎木 翔太</p>
+            <p><strong>創業：</strong>2024年11月11日</p>
+            <br>
+            <p><strong>名称の由来：</strong>Software（柔軟性）、Dynamic（機動力）、Vanguard（最前線）の3つの英単語を組み合わせた造語です。</p>
+        </section>
+
+        <section class="section">
+            <h2>稼働可能スケジュール</h2>
+            <p style="margin-bottom: 20px;">以下のカレンダーから稼働可能な日時をご確認いただけます。</p>
+            <div id="calendar-scheduling-button" style="display: flex; justify-content: center;"></div>
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fwg6FPnO4kdzuzFtR9yd1wUWE74EXJ1E7pKdkPaC0_PbBk7AZR7geK5zUMDvwCoDwjK3vco6_?gv=true" style="border: 0; margin-top: 20px;" width="100%" height="600" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <footer class="contact">
+        <h2>お問い合わせ</h2>
+        <p style="margin: 20px 0;">以下のメールアドレスまで、ご連絡ください。</p>
+        <a href="mailto:shouta02jp@gmail.com">shouta02jp@gmail.com</a>
+        <div class="links">
+            <a href="https://twitter.com/NaCl_5alt" target="_blank">X (@NaCl_5alt)</a>
+            <a href="https://qiita.com/NaCl_5alt" target="_blank">Qiita</a>
+            <a href="https://www.wantedly.com/id/NaCl_5alt" target="_blank">Wantedly</a>
+        </div>
+        <p class="founder">© 2025 Vandynic Software</p>
+    </footer>
+
+    <!-- Google Calendar Appointment Scheduling Button -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <script>
+    (function() {
+      window.addEventListener('load', function() {
+        var target = document.getElementById('calendar-scheduling-button');
+        if (target && typeof calendar !== 'undefined') {
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fwg6FPnO4kdzuzFtR9yd1wUWE74EXJ1E7pKdkPaC0_PbBk7AZR7geK5zUMDvwCoDwjK3vco6_?gv=true',
+            color: '#667eea',
+            label: '予約する',
+            target,
+          });
+        }
+      });
+    })();
+    </script>
+</body>
+</html>
